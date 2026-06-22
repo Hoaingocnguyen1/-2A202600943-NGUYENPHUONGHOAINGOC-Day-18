@@ -1,0 +1,55 @@
+[
+  {
+    "protocol": {
+      "minReaderVersion": 1,
+      "minWriterVersion": 2
+    }
+  },
+  {
+    "metaData": {
+      "id": "e496b603-7446-42cf-b12b-61db25741de9",
+      "name": null,
+      "description": null,
+      "format": {
+        "provider": "parquet",
+        "options": {}
+      },
+      "schemaString": "{\"type\":\"struct\",\"fields\":[{\"name\":\"request_id\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ts\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"raw_json\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+      "partitionColumns": [],
+      "createdTime": 1782100870594,
+      "configuration": {}
+    }
+  },
+  {
+    "add": {
+      "path": "part-00001-5b87eef9-f19a-4d84-8814-d3e23e8102c7-c000.snappy.parquet",
+      "partitionValues": {},
+      "size": 13993661,
+      "modificationTime": 1782100870983,
+      "dataChange": true,
+      "stats": "{\"numRecords\":200000,\"minValues\":{\"request_id\":\"000069ff-b31e-4098-8837-0a7b43653821\",\"raw_json\":\"{\\\"model\\\": \\\"claude-haiku-4-5\\\", \\\"user_id\\\": \\\"u_1\\\", \\\"usage\\\": {\\\"input\\\": 1438, \\\"output\\\": 1846}, \\\"latency_ms\\\": 998, \\\"status\\\": \\\"ok\\\"}\",\"ts\":\"2026-04-01T00:00:00Z\"},\"maxValues\":{\"raw_json\":\"{\\\"model\\\": \\\"claude-sonnet-4-6\\\", \\\"user_id\\\": \\\"u_999\\\", \\\"usage\\\": {\\\"input\\\": 980, \\\"output\\\": 1375}, \\\"latency_ms\\\": 1986, \\\"status\\\": \\\"ok\\\"}\",\"request_id\":\"ffffedfb-67ff-4859-8b40-9feb36aadff3\",\"ts\":\"2026-04-07T23:59:56Z\"},\"nullCount\":{\"raw_json\":0,\"request_id\":0,\"ts\":0}}",
+      "tags": null,
+      "deletionVector": null,
+      "baseRowId": null,
+      "defaultRowCommitVersion": null,
+      "clusteringProvider": null
+    }
+  },
+  {
+    "commitInfo": {
+      "timestamp": 1782100870983,
+      "operation": "WRITE",
+      "operationParameters": {
+        "mode": "Overwrite"
+      },
+      "operationMetrics": {
+        "execution_time_ms": 390,
+        "num_added_files": 1,
+        "num_added_rows": 200000,
+        "num_partitions": 0,
+        "num_removed_files": 0
+      },
+      "clientVersion": "delta-rs.py-0.25.5"
+    }
+  }
+]
